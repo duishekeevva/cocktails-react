@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 -15px;
+}
+
+.col-4 {
+  width:33.33%;
+  padding: 15px;
+}
+
+.col-7 {
+  width: 58.33%;
+  padding: 15px;
+}
+
+.col-5 {
+  width: 41.67%;
+  padding: 15px;
+}
+
+img {
+  width: 100%;
+}

@@ -18,6 +18,11 @@ code {
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -39,6 +44,53 @@ code {
   padding: 15px;
 }
 
+.col-3 {
+  width: 25%;
+  padding: 15px;
+}
+
+.col-2 {
+  width: 15%;
+  padding: 15px;
+}
+.header{
+  padding: 15px 0;
+  background-color: #230312;
+}
+
+.logo-img {
+  width: 250px;
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+}
+
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.link-cocktail {
+  text-decoration: none;
+}
+.header-btn {
+  background-color: #af0a0a;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  color: #FFF;
+  font-weight: bold;
+}
 img {
   width: 100%;
 }

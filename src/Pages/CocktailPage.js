@@ -28,19 +28,20 @@ const MealPage = () => {
                 <div className="row">
                     <div className="col-5">
                         <div className="box">
-                            <h2>{cocktail.strDrink}</h2>
                             <img src={cocktail.strDrinkThumb} alt=""/>
+                        </div>
+                    </div>
+                    <div className="col-7">
+                        <div className="box">
+                            <h2>{cocktail.strDrink}</h2>
+                            <h4 style={{color:'#5e5e5e'}}>Ingredients</h4>
+                            <IngredientList ingredients={ingredients}/>
+                            <h4 style={{color:'#5e5e5e'}}>Instruction on the preparation</h4>
                             <iframe style={{width:'100%'}} src={`https://www.youtube.com/embed/${cocktail
                                 .strYoutube?.slice(cocktail.strYoutube.indexOf('=')
                                     + 1)
                             }`}
                                     frameBorder="4"></iframe>
-                        </div>
-                    </div>
-                    <div className="col-7">
-                        <div className="box">
-                            <h2>Ingredients</h2>
-                            <IngredientList ingredients={ingredients}/>
                         </div>
                     </div>
                 </div>

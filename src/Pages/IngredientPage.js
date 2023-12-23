@@ -16,7 +16,7 @@ const IngredientPage=()=>{
 
     return (
         <div>
-            <CocktailList drinks={ingredient}/>
+            <CocktailList cocktails={ingredient}/>
         </div>
     )
 }

@@ -5,7 +5,7 @@ const CocktailCard=({cocktail})=> {
         <div className={'box'}>
             <img src={cocktail?.strDrinkThumb} alt=""/>
             <h5>
-                <Link to={`/cocktail/${cocktail.idDrink}`}>
+                <Link className={'link-cocktail'} to={`/cocktail/${cocktail.idDrink}`}>
                     {cocktail?.strDrink}
                 </Link>
             </h5>
